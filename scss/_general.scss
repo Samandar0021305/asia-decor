@@ -9,6 +9,15 @@
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+
 @import "./normalize";
 @import "./fonts";
 @import "./varibales";
+@import "./container";
