@@ -1,4 +1,131 @@
 .header{
     background: #424047;
     height: 1031px;
+    &__span{
+        display: flex;
+        align-items: center;
+    }
+    &__item:nth-child(2) img{
+      display: flex;
+    //   width: 100%;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+       padding: 0px 20px;
+       padding-top: 70px;    
+       
+       & button{
+        background: #BC1D4A;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        cursor:pointer;
+        line-height: 21px;
+
+        color: #FFFFFF;
+        width: 211px;
+        height: 44px;
+        border: none;
+        margin-top: 70px;
+       }
+       & p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 240px;
+        color: #FFFFFF;
+       }
+       & h2{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 66.9073px;
+        line-height: 79px;
+
+        color: #FFFFFF;
+       }
+    }
+}
+
+
+@media (max-width:1470px){
+    .header{
+        &__item:nth-child(2) img{
+            display: flex;
+            width: 100%;
+        }
+        &__list{
+            & h2{
+                font-size: 40px;
+            }
+            & li{
+                width: 600px;
+                & p{
+margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1050px){
+    .header{
+        height: auto;
+        
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            padding: 0;
+            margin: 0;
+            padding-top: 30px;
+            & li{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & h2{
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 30px;
+                    line-height: 50px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:400px){
+    .header{
+        &__span{
+            display: flex;
+            justify-content: space-between;
+            & img{
+                width: 33%;
+                display: flex;
+            }
+        }
+        &__item{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        &__list{
+            & h2{
+                width: 100%;
+                font-size: 25px;
+                line-height: 20px;
+            }
+            & p{
+                font-size: 12px;
+            }
+        }
+    }
 }
