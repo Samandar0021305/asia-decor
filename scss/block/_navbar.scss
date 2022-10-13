@@ -1,4 +1,39 @@
 .navbar{
     padding: 20px 15px;
     border-bottom: 1px solid rgba(255, 255,255,0.1);
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & li{
+            margin: 0 10px;
+            & select{
+                outline: none;
+                 border: none;
+                 background-color: transparent;
+                 font-style: normal;
+                 font-weight: 500;
+                 font-size: 18px;
+                 line-height: 21px;
+                 color: #FFFFFF;
+                 &:focus{
+                    background-color: transparent;
+                    outline: none;
+                 }
+            }
+            & a{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+
+                color: #FFFFFF;
+            }
+        }
+    }
 }
