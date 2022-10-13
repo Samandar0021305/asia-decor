@@ -15,7 +15,9 @@ a{
 ul,li{
     list-style: none;
 }
-
+body{
+    font-family: 'Raleway', sans-serif;
+}
 
 @import "./normalize";
 @import "./fonts";

@@ -1,6 +1,12 @@
 .navbar{
     padding: 20px 15px;
     border-bottom: 1px solid rgba(255, 255,255,0.1);
+    &__hero{
+        & img{
+            margin: 0 20px;
+            cursor: pointer;
+        }
+    }
     &__box{
         display: flex;
         justify-content: space-between;
@@ -11,7 +17,7 @@
         justify-content: space-between;
         align-items: center;
         & li{
-            margin: 0 10px;
+            margin: 0 30px;
             & select{
                 outline: none;
                  border: none;
@@ -21,6 +27,10 @@
                  font-size: 18px;
                  line-height: 21px;
                  color: #FFFFFF;
+                 & option{
+                    background-color: #424047;
+                    color: white;
+                 }
                  &:focus{
                     background-color: transparent;
                     outline: none;
@@ -34,6 +44,24 @@
 
                 color: #FFFFFF;
             }
+        }
+    }
+}
+
+@media (max-width:1097px){
+    .navbar{
+        &__list{
+            & li{
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:900px){
+    .navbar{
+        &__list{
+            display: none;
         }
     }
 }
