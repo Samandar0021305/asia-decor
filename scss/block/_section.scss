@@ -1,0 +1,16 @@
+.section{
+    padding: 20px 20px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        & li{
+            width: 270px;
+            & img{
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+}
