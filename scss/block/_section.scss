@@ -1,5 +1,14 @@
 .section{
     padding: 20px 20px;
+    &__title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+           text-align: center;
+        color: #424047;
+    }
     &__list{
         display: flex;
         justify-content: space-between;
@@ -7,10 +16,24 @@
         padding-top: 30px;
         & li{
             width: 270px;
+            margin-top: 20px;
             & img{
                 display: flex;
                 width: 100%;
             }
+        }
+    }
+}
+
+
+
+@media (max-width:400px){
+    .section{
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }

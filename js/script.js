@@ -25,3 +25,17 @@ function listAdd(list,api = []){
 }
 
 listAdd(sectionList,api);
+
+
+
+
+let uslugiList = document.querySelector(".uslugi__list");
+
+const resApi = [
+    {
+        id:1,
+        img:"./as",
+        title:"Распиловка",
+        text:"Если вы приобрели у нас материалы, то воспользуйтесь услугой распила! "
+    },
+] 
