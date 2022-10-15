@@ -11,14 +11,15 @@ const api = [
 ]
 
 function listAdd(list,api = []){
-     
-    let fragment = new DocumentFragment();
-  for(let item of api){
+      let fragment = new DocumentFragment();
+  
+      for(let item of api){
     let sectionLi = document.createElement("li");
     let sectionImg = document.createElement("img");
     sectionImg.src = item.src;
     sectionLi.appendChild(sectionImg);
     fragment.appendChild(sectionLi);
+  
   }
 
   list.appendChild(fragment)
