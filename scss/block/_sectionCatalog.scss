@@ -1,0 +1,34 @@
+.sectionCatalog{
+    padding-top: 40px;
+    &__title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        margin: 20px 30px;
+
+        /* 1 */
+
+        color: #424047;
+
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        & li{
+            margin: 20px 30px;
+            & p{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                  margin-top: 5px;
+                color: #424047;
+            }
+        }
+    }
+}
