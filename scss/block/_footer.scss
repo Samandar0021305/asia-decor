@@ -1,4 +1,32 @@
 .footer{
     background: #424047;
+    padding: 40px 20px;
+    &__topbar{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        & li {
+            & a{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                margin-top: 13px;
+                display: flex;
+                color: #FFFFFF;
 
+            }
+            & p{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                margin-top: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
 }
