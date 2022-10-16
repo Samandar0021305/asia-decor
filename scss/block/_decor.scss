@@ -1,6 +1,49 @@
 .decor{
  background: #424047  url("../../assets/img/section/decor.png");
- height: 400px;
+ height: 545px;
  background-repeat: no-repeat;
  background-size: 100% 100% ;
+ padding: 0 20px;
+
+ &__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100% ;
+    width: 100%;
+ }
+  &__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    & li{
+      width: 200px;
+      & h4{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media (max-width:400px){
+  .decor{
+    height: auto !important;
+    padding-bottom: 30px;
+  }
 }
