@@ -53,6 +53,9 @@
         align-items: center;
         justify-content: space-between;
         width: 80%;
+        & img{
+            cursor: pointer;
+        }
     }
     &__topbar{
         display: flex;
