@@ -2,10 +2,48 @@
     display: flex;
     padding: 20px 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    &__img{
+        margin-top: 20px;
+        width: 50%; 
+     max-height: 700px;
+     min-height: 300px;
+    }
     & div{
         width: 600px;
     }
+    &__title{
+        margin: 20px 10px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        
+        color: #424047;
+    }
     &__list{
+        & p{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 124%;
+            /* or 20px */
+
+
+            /* 1 */
+
+            color: #424047;
+        }
+        & h3{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+
+            color: #424047;
+            margin: 20px 0;
+        }
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,6 +53,20 @@
         & li{
             width: 250px;
             margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width:400px){
+    .uslugi{
+        &__img{
+            width: 90%;
+            text-align: center;
+        }
+        &__list{
+            & li{
+                width: 90%;
+            }
         }
     }
 }
